@@ -22,7 +22,7 @@ async function getAllCountries(){
 }
 
 
-/*Para traer los episodios de mi db y mandarlos:*/
+/*Para traer los paises de mi db y mandarlos:*/
 function getAllCountriesFromDb(req, res) {
     Country.findAll()
     .then(countries => res.send(countries))
